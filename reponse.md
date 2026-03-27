@@ -24,3 +24,5 @@ Cela permet d'initier le répertoire (métadonnées et base de données d'objets
 `revert`: revenir à l'état précédent en créant un nouveau commit
 -> quand on veut montrer le changement d'état
 
+5) `fast-forward` : mode de fusion qui vise à aplanir l'historique intégré. Possible lorsqu'aucune divergence n'existe entre les branches.
+-> Git va simplement bouger le pointeur de la branche sur le nouveau commit de la branche mergé.
