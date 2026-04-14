@@ -1,5 +1,4 @@
-1) Il contient toute la config nécessaire pour versionner, différents 
-répertoires
+1) Il contient toute la config nécessaire pour versionner, différents répertoires
 ```yml
 Gk
 Hooks (pour personnaliser)
@@ -26,3 +25,18 @@ Cela permet d'initier le répertoire (métadonnées et base de données d'objets
 
 5) `fast-forward` : mode de fusion qui vise à aplanir l'historique intégré. Possible lorsqu'aucune divergence n'existe entre les branches.
 -> Git va simplement bouger le pointeur de la branche sur le nouveau commit de la branche mergé.
+
+6) Pour garder un environnement de travail propre. 
+`-d` : supprime les branches mergés
+`-D`: supprime la branche même si pas mergé 
+
+7) Un conflit git survient lorsque le même fichier et la même ligne est modifié par deux personnes simultanéments. Git ne peut pas déterminer quelle version est à conserver. 
+Pour le résoudre, il faut déterminer quelle version est à conserver: 
+- si les deux sont à conserver: déplacer le code un peu plus bas
+- sinon, il faut accepter la bonne modification
+
+8) `git fetch` récupère les modifications du dépôt distant sans les appliquer à la branche locale
+`git pull` intègre automatiquement les modifications du dépôt distant dans la branhce locale  
+
+Si on veut récupérer l'historique de git, sans appliquer les modifications de code, on fait juste un fetch pour avoir l'historique. Tandis que pull va récupérer le distant et le merge, on peut alors avoir des conflits. 
+
