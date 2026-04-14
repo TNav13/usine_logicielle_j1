@@ -40,3 +40,5 @@ Pour le résoudre, il faut déterminer quelle version est à conserver:
 
 Si on veut récupérer l'historique de git, sans appliquer les modifications de code, on fait juste un fetch pour avoir l'historique. Tandis que pull va récupérer le distant et le merge, on peut alors avoir des conflits. 
 
+9) La Pull Request sert à collaborer de manière sécurisée : elle favorise la relecture du code (code review), la vérification de la qualité, et garantit que chaque ajout respecte les standards du projet avant d'être fusionné.
+
